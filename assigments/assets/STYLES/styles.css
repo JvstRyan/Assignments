@@ -337,3 +337,192 @@ body {
 .footer {
     margin-top: 2rem;
 }
+
+
+/*Blocks*/
+
+.blocks {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 100px;
+    }
+
+
+.eat {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    position: absolute;
+    left: 10rem;
+}
+
+.start, .back {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+.pacm {
+    animation-name: floating;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    z-index: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes floating {
+    from {}
+    to {margin-left: 13.9rem;}
+}
+
+
+
+.eat {
+    margin-left: 20rem;
+}
+
+.item {
+    width: 70px;
+}
+
+.cherry {
+    width: 50px;
+}
+
+.monster1{
+    animation-name: monster;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    z-index: 1;
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
+}
+
+@keyframes monster {
+    from {}
+    to {margin-left: 50rem;}
+}
+
+.monster2 {
+    width: 80px;
+    z-index: 1;
+}
+
+
+.player {
+    display: flex;
+    position: absolute;
+    left: 70rem;
+}
+
+.back {
+    position: absolute; 
+    left: 50rem;
+}
+
+.hidden {
+    visibility: hidden;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes appear {
+    from{}
+    to {visibility: visible;}
+}
+
+.pacman {
+    width: 150px;
+    margin-top: -10px;
+    z-index: 10;
+}
+
+.item1 {
+    animation-name: cherry;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    visibility: visible;
+    animation-delay: 1.1s;
+
+}
+
+@keyframes cherry {
+    from {}
+    to {visibility: hidden;}
+}
+
+.item2 {
+    animation-name: cherry;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    visibility: visible;
+    animation-delay: 2.1s;
+
+}
+
+.item3 {
+    animation-name: cherry;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    visibility: visible;
+    animation-delay: 3.1s;
+
+}
+
+.item4 {
+    animation-name: cherry;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    visibility: visible;
+    animation-delay: 4.1s;
+
+}
+
+.back {
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    animation-delay: 7.8s;
+    z-index: 10;
+}
+
+
+.start {
+animation-name: cherry;
+animation-duration: 1s;
+animation-fill-mode: forwards;
+visibility: visible;
+animation-delay: 7s;
+
+}
+
+.pac1 {
+    animation-name: back;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-delay: 8s;
+    animation-timing-function: linear;
+}
+
+@keyframes back {
+    from {}
+    to {margin-left: -60rem;}
+}
+
+.blk {
+    background-color: black;
+}
+
+
+
+
+
